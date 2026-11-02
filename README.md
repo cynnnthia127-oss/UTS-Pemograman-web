@@ -86,24 +86,6 @@ Aplikasi ini berjalan sepenuhnya pada sisi klien (*Client-Side / Front-End*), se
 - `DO-002` (Status: Paket Telah Diterima)
 
 ---
-
-## 🎥 Petunjuk Video Penjelasan UTS
-
-Saat membuat video presentasi (durasi maks. 15 menit), pastikan mencakup poin-poin berikut:
-
-1. **Pembukaan & Perkenalan:**
-   - Sebutkan Nama, NIM, dan judul tugas.
-2. **Demonstrasi Aplikasi:**
-   - Jalankan uji coba login salah (muncul alert error) dan login benar.
-   - Tunjukkan perubahan pesan sapaan (*greeting*) pada Dashboard.
-   - Praktikkan penambahan stok buku baru di `stok.html` dan tunjukkan hasilnya muncul pada tabel.
-   - Buat simulasi transaksi di `checkout.html`.
-   - Lakukan pencarian resi pada `tracking.html`.
-3. **Penjelasan Kode Program (*Alur Berpikir*):**
-   - Jelaskan struktur HTML semantik yang digunakan.
-   - Jelaskan modularitas penggunaan `data.js` untuk pemisahan data JSON dengan logika `script.js`.
-   - Jelaskan teknik manipulasi DOM yang digunakan untuk merender tabel dan membaca input formulir.
-
 ---
 
 ## 📝 Lisensi & Penulis
