@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracking Pengiriman - Toko Buku Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Tracking Pengiriman</h2>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="stock.html">Katalog Stok</a>
+            <a href="checkout.html">Pemesanan</a>
+            <a href="tracking.html">Tracking</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Cek Resi / Nomor Delivery Order (DO)</h2>
+        <p>Contoh Nomor DO yang tersedia: <b>DO-001</b> atau <b>DO-002</b></p>
+        <div class="form-group" style="margin-top: 15px;">
+            <input type="text" id="inputNoDO" placeholder="Masukkan Nomor DO (Contoh: DO-001)">
+        </div>
+        <button id="btnCariDO">Cari Pengiriman</button>
+
+        <div id="hasilTracking" style="margin-top: 25px; display: none; background: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+            <h3>Detail Pengiriman</h3>
+            <p><strong>Nama Pemesan:</strong> <span id="trackNama"></span></p>
+            <p><strong>Status:</strong> <span id="trackStatus" style="color: #27ae60; font-weight: bold;"></span></p>
+            <p><strong>Ekspedisi:</strong> <span id="trackEkspedisi"></span></p>
+            <p><strong>Tanggal Kirim:</strong> <span id="trackTanggal"></span></p>
+            <p><strong>Jenis Paket:</strong> <span id="trackPaket"></span></p>
+            <p><strong>Total Pembayaran:</strong> Rp <span id="trackTotal"></span></p>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

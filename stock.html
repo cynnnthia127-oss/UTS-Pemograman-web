@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Katalog Stok - Toko Buku Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Katalog Buku</h2>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="stock.html">Katalog Stok</a>
+            <a href="checkout.html">Pemesanan</a>
+            <a href="tracking.html">Tracking</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Daftar Stok Buku Terbaru</h2>
+        
+        <!-- Form Tambah Stok Baru Menggunakan JS DOM -->
+        <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+            <h3>Tambah Buku Baru</h3>
+            <form id="formTambahStok">
+                <div class="form-group">
+                    <label>Judul Buku</label>
+                    <input type="text" id="inputJudul" required>
+                </div>
+                <div class="form-group">
+                    <label>Penulis</label>
+                    <input type="text" id="inputPenulis" required>
+                </div>
+                <div class="form-group">
+                    <label>Harga (Rp)</label>
+                    <input type="number" id="inputHarga" min="1" step="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Stok</label>
+                    <input type="number" id="inputStok" min="0" step="1" required>
+                </div>
+                <button type="submit">Tambah ke Katalog</button>
+            </form>
+        </div>
+
+        <table id="tabelStok">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Gambar</th>
+                    <th>Judul Buku</th>
+                    <th>Penulis</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan dirender secara dinamis via JavaScript dari data.js -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
